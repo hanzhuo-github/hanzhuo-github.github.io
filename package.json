@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "docs:clean-dev": "vuepress dev src --clean-cache",
+    "docs:update-package": "pnpm dlx vp-update"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +15,8 @@
   "devDependencies": {
     "@vuepress/client": "2.0.0-beta.63",
     "vue": "^3.3.4",
-    "vuepress": "2.0.0-beta.63"
+    "vuepress": "2.0.0-beta.63",
+    "vuepress-plugin-md-enhance": "2.0.0-beta.228",
+    "vuepress-theme-hope": "2.0.0-beta.228"
   }
 }
