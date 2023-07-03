@@ -1,19 +1,38 @@
-import { defineUserConfig } from 'vuepress'
+import { defineUserConfig } from 'vuepress';
+import { getDirname, path } from "@vuepress/utils";
 import theme from './theme';
+import { searchProPlugin } from 'vuepress-plugin-search-pro';
+import { registerComponentsPlugin } from '@vuepress/plugin-register-components';
+
+
+const __dirname = getDirname(import.meta.url);
 
 export default defineUserConfig({
-  theme,
+  
   locales: {
     '/': {
       lang: 'zh-CN',
       title: 'MicroTiny',
-      description: 'Vue 驱动的静态网站生成器',
+      description: '记录日常工作学习生活的笔记',
     },
     '/en/': {
       lang: 'en-US',
       title: 'MicroTiny',
-      description: 'Vue-powered Static Site Generator',
+      description: 'Record notes for daily work, study and life',
     },
+  },
+  theme,
+  plugins: [
+    searchProPlugin({
+      // 索引全部内容
+      indexContent: true,
+    }),
+    registerComponentsPlugin({
+      componentsDir: path.resolve(__dirname, "./components"),
+    }),
+  ],
+  alias: {
+    '@MyCard': path.resolve(__dirname, './components/Card.vue'),
   },
   pagePatterns: ['**/*.md', '!**/README.md', '!.vuepress', '!node_modules'],
 })

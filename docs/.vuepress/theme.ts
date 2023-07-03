@@ -2,15 +2,31 @@ import { hopeTheme } from "vuepress-theme-hope";
 import { enNavbar, zhNavbar } from "./navbar/index";
 
 export default hopeTheme({
+  author: {
+    name: 'Soul',
+    email: 'hanzhuosoul@gmail.com',
+  },
+  repo: "hanzhuo-github/hanzhuo-github.github.io",
+
+  navbarLayout: {
+    start: ["Brand"],
+    center: ["Links"],
+    end: ["Language", "Repo", "Outlook", "Search"],
+  },
+
   plugins: {
     mdEnhance: {
       card: true,
     },
     comment: {
       provider: "Waline",
-
-      // waline 模式下
-      serverURL: "https://comments.richzone.ink/", // your serverURL
+      serverURL: "comments.richzone.ink/", // your serverURL
+    },
+    components: {
+      components: [
+        "Badge",
+        "Share",
+      ],
     },
   },
 

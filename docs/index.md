@@ -38,10 +38,31 @@ actions: [{
 # }]
 ---
 
-```card
+<!-- ```card
 title: Mr.Hope
 desc: Where there is light, there is hope
 logo: https://mrhope.site/logo.svg
 link: https://mrhope.site
 color: rgba(253, 230, 138, 0.15)
+``` -->
+<!-- 
+- VuePress - <Badge type="tip" text="v2" vertical="top" />
+- VuePress - <Badge type="warning" text="v2" vertical="middle" />
+- VuePress - <Badge type="danger" text="v2" vertical="bottom" />
+
+
+<Share colorful :services="['qq','weibo', 'douban', 'facebook', 'telegram', 'twitter']" /> -->
+
+::: info
+信息容器。
+:::
+
+::: tip 自定义标题
+
+一个有 `代码` 和 [链接](#演示) 的提示容器。
+
+```js
+const a = 1;
 ```
+
+:::
