@@ -1,5 +1,6 @@
 import { hopeTheme } from "vuepress-theme-hope";
 import { enNavbar, zhNavbar } from "./navbar/index";
+import { enSidebar, zhSidebar } from "./sidebar/index";
 
 export default hopeTheme({
   author: {
@@ -31,17 +32,23 @@ export default hopeTheme({
   },
 
   // 关键词: "iconfont", "iconify", "fontawesome", "fontawesome-with-brands"
-  iconAssets: "fontawesome-with-brands",
+  iconAssets: "fontawesome",
 
   // 支持全屏模式
   fullscreen: true,
 
+  print: false,
+
   locales: {
     '/': {
       navbar: zhNavbar,
+      sidebar: zhSidebar,
+      headerDepth: 3,
     },
     '/en/': {
       navbar: enNavbar,
+      sidebar: enSidebar,
+      headerDepth: 3,
     },
   },
 })

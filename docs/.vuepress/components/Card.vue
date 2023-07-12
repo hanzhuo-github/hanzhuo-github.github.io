@@ -21,7 +21,7 @@ const props = defineProps<CardProps>()
 </script>
 <style lang="scss" scoped>
 .card {
-  border: 1px solid #ccc;
+  border: 1px solid var(--mt-border-color);
   border-radius: 6px;
   padding: 10px;
   width: fit-content;

@@ -8,7 +8,11 @@ import { registerComponentsPlugin } from '@vuepress/plugin-register-components';
 const __dirname = getDirname(import.meta.url);
 
 export default defineUserConfig({
-  
+  markdown: {
+    headers: {
+      level: [2, 3, 4],
+    },
+  },
   locales: {
     '/': {
       lang: 'zh-CN',

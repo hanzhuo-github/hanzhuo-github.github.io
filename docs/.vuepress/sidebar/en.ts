@@ -1,8 +1,8 @@
-import { navbar } from "vuepress-theme-hope";
+import { sidebar } from "vuepress-theme-hope";
 
-export const enNavbar = navbar([
+export const enSidebar = sidebar([
   {
-    text: 'Home',
-    link: '/'
+    text: 'Hugging Face',
+    link: '/huggingface/',
   }
 ])
