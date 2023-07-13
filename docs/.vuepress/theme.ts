@@ -18,6 +18,8 @@ export default hopeTheme({
   plugins: {
     mdEnhance: {
       card: true,
+      katex: true,
+      mathjax: true,
     },
     comment: {
       provider: "Waline",
