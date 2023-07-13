@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-ecf332e6","path":"/huggingface/section1/","title":"Section1","lang":"zh-CN","frontmatter":{"title":"Section1","article":false,"feed":false,"sitemap":false},"headers":[],"git":{},"readingTime":{"minutes":0,"words":1},"filePathRelative":null,"excerpt":""}');export{e as data};
