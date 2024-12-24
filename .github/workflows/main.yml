@@ -1,0 +1,48 @@
+name: docs build
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  Hertz-Webpage-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          # 如果你文档需要 Git 子模块，取消注释下一行
+          # submodules: true
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: |
+          rm -rf node_modules
+          npm ci
+
+      - name: Clean temporary files
+        run: |
+          rm -rf docs/.vuepress/.temp
+
+      - name: Build Docs
+        env:
+          NODE_OPTIONS: --max_old_space_size=8192
+        run: |-
+          npm run docs:build -- --debug
+          > docs/.vuepress/dist/.nojekyll
+
+      - name: Deploy GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          # 指定静态文件部署到的分支
+          branch: gh-pages
+          folder: docs/.vuepress/dist

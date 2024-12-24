@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 4793637 */
+  src: url('iconfont.woff2?t=1735100604687') format('woff2'),
+       url('iconfont.woff?t=1735100604687') format('woff'),
+       url('iconfont.ttf?t=1735100604687') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-theory:before {
+  content: "\e61d";
+}
+
+.icon-book:before {
+  content: "\e857";
+}
+
+.icon-rl:before {
+  content: "\ea7f";
+}
+
+.icon-re:before {
+  content: "\e72e";
+}
+
+.icon-dp:before {
+  content: "\e74f";
+}
+
+.icon-ds:before {
+  content: "\e734";
+}
+
+.icon-huggingface:before {
+  content: "\e624";
+}
+
+.icon-frameworks:before {
+  content: "\e68c";
+}
+
+.icon-framework:before {
+  content: "\e602";
+}
+
+.icon-browser:before {
+  content: "\e606";
+}
+
+.icon-project:before {
+  content: "\e609";
+}
+
+.icon-js:before {
+  content: "\ec68";
+}
+
+.icon-config:before {
+  content: "\e616";
+}
+
+.icon-react:before {
+  content: "\e64b";
+}
+
+.icon-vuejs:before {
+  content: "\ec2c";
+}
+
