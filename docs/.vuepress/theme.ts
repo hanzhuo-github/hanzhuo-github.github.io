@@ -16,7 +16,10 @@ export default hopeTheme({
 
   // https://fontawesome.com/search?o=r&m=free&f=brands
 
-  iconAssets: ["/fonts/iconfont.css", "fontawesome"],
+  iconAssets: [
+    "//at.alicdn.com/t/c/font_4793637_2lrcv6o69nb.css",
+    "fontawesome",
+  ],
 
   // iconPrefix: "fas fa-",
 

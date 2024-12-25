@@ -36,7 +36,7 @@ export default defineUserConfig({
 
   alias: {
     "@MyCard": path.resolve(__dirname, "./components/Card.vue"),
-    "/fonts": path.resolve(__dirname, "./fonts"),
+    // "/fonts": path.resolve(__dirname, "./fonts"),
   },
   // Enable it with pwa
   // shouldPrefetch: false,
