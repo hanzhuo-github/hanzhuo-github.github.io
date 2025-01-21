@@ -36,7 +36,7 @@ export const zhNavbar = navbar([
       {
         text: "工程化",
         icon: "iconfont icon-project",
-        link: "configuration//1-module",
+        link: "configuration/1-module",
       },
     ],
   },
@@ -89,6 +89,11 @@ export const zhNavbar = navbar([
         link: "/ai/huggingface-nlp/",
         icon: "iconfont icon-huggingface",
         activeMatch: "^/huggingface-nlp/$",
+      },
+      {
+        text: "Python",
+        link: "/pl/python/",
+        icon: "iconfont icon-python",
       },
     ],
   },

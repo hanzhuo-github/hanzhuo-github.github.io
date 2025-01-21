@@ -25,6 +25,7 @@ export const zhSidebar = sidebar({
   "/pl/blockchain/": "structure",
   "/dev/": "structure",
   "/ai/": ai,
+  "/pl/python/": "structure",
 
   // fallback
   "/": ["", "front-end/", "coding/", "dev/"],
